@@ -1,0 +1,96 @@
+:root {
+  
+  --c-base: #ffffff;
+  --c-cream: #fff9f6;    
+  --c-peach: #fbeee5;    
+  --c-sub: #ff7f55;      
+  --c-sub-deep: #e8613a;
+  --c-sub-ink: #a8401f;
+  --c-sub-ghost: rgba(255, 255, 255, 0.16);
+  --c-accent: #ff7f55;
+  --c-accent-2: #ffb26b;  
+  --c-pink: #e8508a;      
+  --c-navy: #2f3d63;      
+  --c-pale: #fbeee5;
+  --c-ink: #2b2522;
+  --c-ink-soft: #6b5f59;
+  --c-line: #efdcd0;
+  --c-dark: #2f3d63;
+  --c-dark-text: #ffffff;
+  --c-dark-soft: rgba(255, 255, 255, 0.64);
+  --c-dark-ghost: rgba(255, 255, 255, 0.14);
+  --c-on-photo: #ffffff;
+  --c-shade: rgba(8, 14, 36, 0.62);
+  --c-shade-0: rgba(8, 14, 36, 0);
+  --c-shade-side: rgba(12, 26, 69, 0.86);
+  --c-wash: rgba(255, 249, 246, 0.86);   
+  --c-wash-0: rgba(255, 249, 246, 0);
+  --c-veil: rgba(255, 250, 247, 0.18);   
+  --c-veil-0: rgba(255, 250, 247, 0.12);
+  --c-tag: rgba(255, 255, 255, 0.92);    
+  --c-drop: rgba(120, 70, 40, 0.14);     
+  --c-ph-1: #f6e6dc;
+  --c-ph-2: #8e9bb3;
+
+  
+  --ff-body: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  --ff-en: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
+  --ff-min: "Shippori Mincho B1", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --ff-hand: "Zen Kurenaido", "Klee One", "Hiragino Maru Gothic ProN", sans-serif;   
+
+  
+  --fs-body: 15px;
+  --fw-body: 400;
+  --lh-body: 1.95;
+  --ls-body: 0.04em;
+  --fs-small: 13px;
+  --fs-label: 14px;
+  --fs-nav: 14px;
+  --fs-input: 16px;
+  --fs-lead: clamp(22px, 2.8vw, 42px);
+  --lh-lead: 1.55;
+  --fs-head: clamp(20px, 2.2vw, 30px);
+  --lh-head: 1.6;
+  --fs-en-l: clamp(40px, 6.4vw, 112px);
+  --lh-en: 0.9;
+  --ls-en: -0.04em;
+
+  
+  --sp-1: 8px;
+  --sp-p: 16px;
+  --sp-b: 32px;
+  --sp-g: 48px;
+  --sp-s: 80px;
+  --sec-y: 96px;
+  --gutter: 20px;
+  --frame: 10px;
+  --wrap: 1200px;
+  --radius: 12px;
+
+  
+  --header-h: 64px;
+  --btn-arw: 40px;
+  --label-col: 7em;
+
+  
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-rv: 0.9s;
+  --loading-dur: 1.4s;   
+}
+@media (min-width: 960px) {
+  :root {
+    --fs-body: 16px;
+    --sp-p: 20px;
+    --sp-b: 40px;
+    --sp-g: 64px;
+    --sp-s: 120px;
+    --sec-y: 160px;
+    --gutter: 48px;
+    --frame: 16px;
+    --header-h: 88px;
+    --btn-arw: 46px;
+  }
+}
+@media (min-width: 1600px) {
+  :root { --fs-body: 17px; --wrap: 1400px; --sp-s: 140px; --sec-y: 190px; }
+}
