@@ -35,6 +35,12 @@
   --c-mist-2: #e6e1ea;
   --c-mist-btn: rgba(255, 255, 255, 0.72);
   --c-mist-ink: #3e3a4d;
+  --c-glow-1: rgba(255, 178, 107, 0.55);  
+  --c-glow-2: rgba(232, 80, 138, 0.22);
+  --c-glow-3: rgba(255, 127, 85, 0.35);
+  --c-ring: rgba(255, 127, 85, 0.35);     
+  --c-dot: rgba(255, 127, 85, 0.35);      
+  --c-shine: rgba(255, 255, 255, 0.55);   
   --c-ph-1: #f6e6dc;
   --c-ph-2: #8e9bb3;
 

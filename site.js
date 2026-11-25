@@ -54,4 +54,26 @@
 
   document.querySelectorAll('form[data-todo]').forEach((f) => f.addEventListener('submit', (e) => e.preventDefault()));
 
+  const fxs = [...document.querySelectorAll('[data-fx]')];
+  fxs.filter((el) => el.dataset.fx === 'list').forEach((el) => [...el.children].forEach((c, i) => c.style.setProperty('--i', i)));
+  const calm = window.__kitCheck || matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (calm) fxs.forEach((el) => el.classList.add('is-in'));
+  else {
+    const fio = new IntersectionObserver((es) => es.forEach((en) => { if (en.isIntersecting) { en.target.classList.add('is-in'); fio.unobserve(en.target); } }), { rootMargin: '0px 0px -12% 0px' });
+    fxs.forEach((el) => fio.observe(el));
+    const px = [...document.querySelectorAll('.band img, .salon__pic img, [data-px]')];
+    let ticking = false;
+    const run = () => {
+      const vh = innerHeight;
+      px.forEach((el) => {
+        const r = el.parentElement.getBoundingClientRect();
+        if (r.bottom < 0 || r.top > vh) return;
+        const k = parseFloat(el.dataset.px || '0.08');
+        el.style.translate = '0 ' + ((r.top + r.height / 2 - vh / 2) * -k).toFixed(1) + 'px';
+      });
+      ticking = false;
+    };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(run); } }, { passive: true });
+    run();
+  }
 })();
